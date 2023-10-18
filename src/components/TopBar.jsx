@@ -5,11 +5,11 @@ const TopBar = () => {
   const scrollToSection = (id) => {
     const element = document.getElementById(id);
     if (element) {
-      
+
       window.scrollTo({
-              top: element.offsetTop - 120,
-              behavior:'smooth',
-            });
+        top: element.offsetTop - 120,
+        behavior: 'smooth',
+      });
     }
   };
 
@@ -39,6 +39,12 @@ const TopBar = () => {
               className="mr-5 hover:text-gray-900 cursor-pointer"
             >
               Download
+            </button>
+            <button
+              onClick={() => scrollToSection('extra')}
+              className="mr-5 hover:text-gray-900 cursor-pointer"
+            >
+              Extra
             </button>
             <button
               onClick={() => scrollToSection('contact')}
